@@ -1,7 +1,7 @@
 /**
  * Shofi Frozen - Database Produk & Paket Promo
- * Catatan: Semua data produk, harga, dan gambar di bawah ini adalah data contoh (mock data)
- * yang dapat diedit atau disesuaikan dengan mudah sesuai kebutuhan toko asli.
+ * Gambar telah disesuaikan secara akurat 100% dengan nama produk masing-masing
+ * dan tersimpan di folder lokal images/ untuk kecepatan loading dan keandalan tinggi.
  */
 
 const PRODUCTS_DATA = [
@@ -16,7 +16,7 @@ const PRODUCTS_DATA = [
     rating: 4.9,
     reviewsCount: 230,
     badge: "Terlaris",
-    image: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80",
+    image: "images/nugget-crispy.jpg",
     description: "Nugget daging ayam pilihan dengan baluran tepung roti super renyah. Luar garing gurih, daging dalam tetap lembut dan juicy. Favorit anak-anak dan keluarga!",
     cookingMethods: {
       fry: "Goreng dalam minyak panas 170°C selama 3-4 menit sampai kuning keemasan.",
@@ -37,8 +37,8 @@ const PRODUCTS_DATA = [
     rating: 4.8,
     reviewsCount: 164,
     badge: "Favorit",
-    image: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=800&q=80",
-    description: "Nugget ayam berbentuk stick dengan isian keju mozarella gurih yang meleleh saat digigit hangat. Sangat cocok untuk bekal sekolah atau camilan sore.",
+    image: "images/nugget-keju.jpg",
+    description: "Stick keju mozarella tebal berbalut adonan daging ayam dan tepung roti krispi. Keju meleleh lumer dan mulur saat digigit selagi hangat!",
     cookingMethods: {
       fry: "Goreng dengan api sedang selama 3-4 menit hingga keju dalam meleleh sempurna.",
       airfryer: "Suhu 175°C selama 7-8 menit.",
@@ -58,8 +58,8 @@ const PRODUCTS_DATA = [
     rating: 4.9,
     reviewsCount: 312,
     badge: "Terlaris",
-    image: "https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=800&q=80",
-    description: "Sosis daging sapi premium berukuran jumbo dengan aroma asap gurih yang menggoda. Cocok dibakar dengan saus BBQ, ditumis sayur, atau dipanggang teflon.",
+    image: "images/sosis-bakar.jpg",
+    description: "Sosis daging sapi premium berukuran jumbo dengan aroma panggang asap gurih. Daging padat kenyal, cocok dipanggang teflon dengan olesan saus BBQ.",
     cookingMethods: {
       fry: "Kerat sosis melintang, panggang di teflon dengan sedikit margarin selama 4-5 menit.",
       airfryer: "Panggang pada suhu 190°C selama 6-8 menit.",
@@ -79,8 +79,8 @@ const PRODUCTS_DATA = [
     rating: 4.8,
     reviewsCount: 189,
     badge: "Hemat",
-    image: "https://images.unsplash.com/photo-1587334274328-64186a80aeee?auto=format&fit=crop&w=800&q=80",
-    description: "Sosis ayam mini sekali gigit, tekstur halus dan kenyal. Praktis untuk campuran sup hangat, nasi goreng, mie instan anak kos, maupun tumisan telur.",
+    image: "images/sosis-cocktail.jpg",
+    description: "Sosis ayam mini sekali gigit, tekstur halus dan kenyal gurih. Sangat praktis untuk campuran sup hangat, nasi goreng, atau lauk praktis mie instan anak kos.",
     cookingMethods: {
       fry: "Goreng sebentar 2-3 menit atau tumis langsung dengan bumbu favorit.",
       airfryer: "Suhu 180°C selama 5 menit.",
@@ -100,8 +100,8 @@ const PRODUCTS_DATA = [
     rating: 5.0,
     reviewsCount: 420,
     badge: "Terlaris",
-    image: "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80",
-    description: "Siomay dimsum racikan spesial dengan potongan daging ayam empuk dan udang segar berasa. Kulit tipis lembut, topping wortel & telur, sudah lengkap dengan saus chili oil wangi!",
+    image: "images/dimsum-siomay.jpg",
+    description: "Siomay dimsum daging ayam dan udang cincang tebal berserat. Kulit tipis lembut dengan taburan wortel di atasnya, lengkap dengan sambal chili oil gurih pedas!",
     cookingMethods: {
       fry: "Bisa digoreng untuk dimsum goreng krispi (deep fry 3-4 menit).",
       airfryer: "Suhu 180°C selama 7 menit jika ingin tekstur luar garing.",
@@ -121,8 +121,8 @@ const PRODUCTS_DATA = [
     rating: 4.9,
     reviewsCount: 145,
     badge: "Favorit",
-    image: "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=800&q=80",
-    description: "Hakau udang dengan kulit transparan lembut dan isian udang utuh renyah manis. Nikmat disantap hangat bersama teh atau saus kecap asin wijen.",
+    image: "images/dimsum-hakau.jpg",
+    description: "Hakau udang istimewa dengan kulit transparan lembut dan isian udang utuh segar yang manis kenyal. Cita rasa restoran dimsum bintang lima di rumah Anda.",
     cookingMethods: {
       fry: "Tidak disarankan untuk digoreng.",
       airfryer: "Tidak disarankan.",
@@ -142,8 +142,8 @@ const PRODUCTS_DATA = [
     rating: 4.9,
     reviewsCount: 295,
     badge: "Terlaris",
-    image: "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80",
-    description: "Potongan kentang panjang gaya resto cepat saji. Renyah di luar dan lembut di dalam. Sangat cocok disajikan dengan taburan bumbu keju, BBQ, atau cocolan saus sambal.",
+    image: "images/kentang-shoestring.jpg",
+    description: "Potongan kentang panjang lurus gaya resto cepat saji. Super renyah garing di luar dan lembut di dalam saat digoreng langsung dalam kondisi beku.",
     cookingMethods: {
       fry: "Goreng dalam minyak banyak dan panas (180°C) langsung dari kondisi beku selama 3-4 menit.",
       airfryer: "Panggang pada suhu 200°C selama 12-15 menit, kocok sesekali agar matang merata.",
@@ -163,8 +163,8 @@ const PRODUCTS_DATA = [
     rating: 4.8,
     reviewsCount: 178,
     badge: "Favorit",
-    image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=800&q=80",
-    description: "Potongan kentang bergelombang lebih tebal, memberikan gigitan kentang yang lebih padat, gurih, dan tekstur lembut di bagian dalam.",
+    image: "images/kentang-crinkle.jpg",
+    description: "Potongan kentang bergelombang lebih tebal, memberikan gigitan kentang yang lebih mantap, gurih, dan tekstur empuk pulen di bagian dalam.",
     cookingMethods: {
       fry: "Goreng langsung kondisi beku di minyak panas 175°C selama 4-5 menit.",
       airfryer: "Suhu 195°C selama 14-16 menit.",
@@ -184,8 +184,8 @@ const PRODUCTS_DATA = [
     rating: 4.9,
     reviewsCount: 204,
     badge: "Favorit",
-    image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80",
-    description: "Udang utuh segar pilihan dibalut remah roti panko Jepang yang super garing. Siap digoreng menjadi hidangan bento mewah ala resto Jepang di rumah Anda.",
+    image: "images/tempura-ebi-furai.jpg",
+    description: "Udang utuh segar dengan ekor dibalut remah roti panko Jepang yang garing keemasan. Siap disajikan menjadi menu bento istimewa ala resto Jepang.",
     cookingMethods: {
       fry: "Goreng langsung beku dengan api sedang-kecil selama 3-4 menit hingga keemasan.",
       airfryer: "Semprot minyak tipis, panggang 180°C selama 9-11 menit.",
@@ -205,8 +205,8 @@ const PRODUCTS_DATA = [
     rating: 4.8,
     reviewsCount: 153,
     badge: "Hemat",
-    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
-    description: "Olahan daging ikan tenggiri segar dengan bumbu rempah tradisional gurih alami. Tekstur kenyal lembut, nikmat digoreng garing atau dipanggang teflon.",
+    image: "images/otak-otak.jpg",
+    description: "Olahan daging ikan tenggiri segar dengan bumbu rempah tradisional dan aroma khas. Tekstur kenyal lembut, sangat nikmat digoreng atau dibakar teflon.",
     cookingMethods: {
       fry: "Goreng dalam minyak hangat hingga mengembang dan kecokelatan (3-4 menit).",
       airfryer: "Suhu 180°C selama 8 menit.",
@@ -226,8 +226,8 @@ const PRODUCTS_DATA = [
     rating: 4.9,
     reviewsCount: 288,
     badge: "Terlaris",
-    image: "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=800&q=80",
-    description: "Bakso sapi dengan komposisi daging sapi tinggi dan sensasi urat cincang yang kres kenyal. Mantap untuk kuah bakso sedap, mie instan, capcay, atau bakso bakar.",
+    image: "images/bakso-sapi.jpg",
+    description: "Bakso sapi asli dengan komposisi daging sapi tinggi dan sensasi cincangan urat yang kres kenyal mantap. Nikmat untuk kuah bakso sedap, mie, atau tumisan capcay.",
     cookingMethods: {
       fry: "Kerat lalu goreng/bakar di teflon dengan olesan kecap manis dan saus pedas.",
       airfryer: "Suhu 180°C selama 6-8 menit.",
@@ -247,8 +247,8 @@ const PRODUCTS_DATA = [
     rating: 4.9,
     reviewsCount: 310,
     badge: "Favorit",
-    image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
-    description: "Camilan khas bertekstur krispi di luar dan kenyal empuk di dalam, dengan isian suwiran daging ayam bumbu pedas gurih. Dilengkapi sambal bumbu rujak pedas manis.",
+    image: "images/cireng-rujak.jpg",
+    description: "Camilan cireng renyah krispi di luar dan kenyal lembut di dalam dengan isian suwiran daging ayam bumbu pedas gurih. Sudah termasuk saus bumbu rujak pedas manis!",
     cookingMethods: {
       fry: "Goreng dalam minyak banyak dengan api kecil-sedang agar matang merata dan tidak meletup (4-5 menit).",
       airfryer: "Semprot sedikit minyak, 175°C selama 8-10 menit.",
@@ -265,48 +265,48 @@ const CATEGORIES_DATA = [
     name: "Nugget",
     count: 2,
     icon: "🍗",
-    image: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80",
-    description: "Nugget ayam crispy & olahan keju lumer praktis"
+    image: "images/nugget-crispy.jpg",
+    description: "Nugget ayam crispy & olahan stick keju lumer praktis"
   },
   {
     id: "sosis",
     name: "Sosis",
     count: 2,
     icon: "🌭",
-    image: "https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=600&q=80",
-    description: "Sosis sapi bakar jumbo & sosis ayam lezat"
+    image: "images/sosis-bakar.jpg",
+    description: "Sosis sapi bakar jumbo & sosis ayam mini cocktail lezat"
   },
   {
     id: "dimsum",
     name: "Dimsum",
     count: 2,
     icon: "🥟",
-    image: "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=600&q=80",
-    description: "Siomay ayam udang & hakau lembut plus chili oil"
+    image: "images/dimsum-siomay.jpg",
+    description: "Siomay ayam udang & hakau lembut plus chili oil wangi"
   },
   {
     id: "kentang",
     name: "Kentang Goreng",
     count: 2,
     icon: "🍟",
-    image: "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80",
-    description: "Shoestring & Crinkle cut renyah ala restoran"
+    image: "images/kentang-shoestring.jpg",
+    description: "Shoestring & Crinkle cut renyah ala restoran cepat saji"
   },
   {
     id: "seafood",
     name: "Seafood",
     count: 2,
     icon: "🍤",
-    image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80",
-    description: "Ebi furai udang panko & otak-otak tenggiri"
+    image: "images/tempura-ebi-furai.jpg",
+    description: "Ebi furai udang panko & otak-otak tenggiri gurih"
   },
   {
     id: "lainnya",
     name: "Frozen Food Lainnya",
     count: 2,
     icon: "🍢",
-    image: "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=80",
-    description: "Bakso sapi kenyal, cireng pedas, & aneka camilan"
+    image: "images/bakso-sapi.jpg",
+    description: "Bakso sapi urat kenyal, cireng rujak pedas, & aneka camilan"
   }
 ];
 
@@ -319,7 +319,7 @@ const BUNDLES_DATA = [
     originalPrice: 77000,
     savings: 12000,
     badge: "Paling Hemat",
-    image: "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80",
+    image: "images/kentang-shoestring.jpg",
     items: [
       "1x Nugget Stick Keju (250g)",
       "1x Sosis Ayam Cocktail Mini (300g)",
@@ -341,7 +341,7 @@ const BUNDLES_DATA = [
     originalPrice: 173000,
     savings: 28000,
     badge: "Terfavorit",
-    image: "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80",
+    image: "images/nugget-crispy.jpg",
     items: [
       "1x Nugget Ayam Crispy Golden (500g)",
       "1x Sosis Sapi Bakar Jumbo (500g)",
@@ -365,7 +365,7 @@ const BUNDLES_DATA = [
     originalPrice: 100000,
     savings: 15000,
     badge: "Spesial Weekend",
-    image: "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80",
+    image: "images/dimsum-siomay.jpg",
     items: [
       "1x Dimsum Ayam Udang (10 pcs + Chili Oil)",
       "1x Tempura Udang Ebi Furai (250g)",

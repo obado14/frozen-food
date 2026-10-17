@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shofi Frozen — Stok Frozen Food, Masak Jadi Lebih Mudah!</title>
+  <meta name="description" content="Toko frozen food modern & praktis untuk keluarga, mahasiswa, dan anak kos. Sedia nugget, sosis, dimsum, kentang goreng, seafood lezat siap masak.">
+  
+  <!-- Favicon / Ikon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❄️</text></svg>">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              300: '#fdba74',
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              800: '#9a3412',
+              900: '#7c2d12',
+            },
+            fresh: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+            },
+            cream: {
+              50: '#fdfbf7',
+              100: '#faf5ec',
+              200: '#f4ebd8',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#FDFBF7] text-slate-800 antialiased selection:bg-orange-500 selection:text-white">
+
+  <!-- TOP PROMO BANNER -->
+  <div class="bg-gradient-to-r from-orange-600 via-amber-500 to-orange-600 text-white text-xs font-semibold py-2 px-4 text-center tracking-wide flex items-center justify-center gap-2 relative z-50">
+    <span class="inline-block animate-bounce">🔥</span>
+    <span>Promo Spesial: Gunakan kode kupon <span class="bg-white/20 px-2 py-0.5 rounded font-mono font-bold tracking-wider">SHOFIHEMAT</span> untuk Diskon 10%!</span>
+    <span class="hidden sm:inline text-orange-100">• Gratis Ice Gel & Packing Dingin (Order > Rp 100k) ❄️</span>
+  </div>
+
+  <!-- A. NAVBAR -->
+  <header class="sticky top-0 z-40 glass-nav transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Ikon Shofi Frozen -->
+        <a href="#hero" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-orange-500 to-amber-400 flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform">
+            <!-- Ikon Snowflake + Cloche SVG -->
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14" opacity="0.3"></path>
+              <path d="M12 3a9 9 0 0 0-9 9h18a9 9 0 0 0-9-9z"></path>
+              <path d="M5 16h14"></path>
+              <circle cx="12" cy="3" r="1"></circle>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-heading font-extrabold text-2xl tracking-tight text-slate-900 group-hover:text-orange-600 transition-colors">
+                Shofi<span class="text-orange-600">Frozen</span>
+              </span>
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold px-1.5 py-0.5 rounded-md">
+                FRESH
+              </span>
+            </div>
+            <p class="text-[11px] text-slate-500 font-medium -mt-1 hidden sm:block">
+              Toko Frozen Food Praktis & Lezat
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#hero" class="text-sm font-semibold text-slate-700 hover:text-orange-600 transition-colors">
+            Beranda
+          </a>
+          <a href="#kategori" class="text-sm font-semibold text-slate-700 hover:text-orange-600 transition-colors">
+            Kategori
+          </a>
+          <a href="#katalog" class="text-sm font-semibold text-slate-700 hover:text-orange-600 transition-colors flex items-center gap-1">
+            Produk
+            <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+          </a>
+          <a href="#promo-hemat" class="text-sm font-semibold text-slate-700 hover:text-orange-600 transition-colors">
+            Paket Hemat
+          </a>
+          <a href="#keunggulan" class="text-sm font-semibold text-slate-700 hover:text-orange-600 transition-colors">
+            Tentang Kami
+          </a>
+          <a href="#kontak" class="text-sm font-semibold text-slate-700 hover:text-orange-600 transition-colors">
+            Kontak
+          </a>
+        </nav>
+
+        <!-- Right Side: Cart Button & CTA Belanja Sekarang -->
+        <div class="flex items-center gap-3">
+          <!-- Cart Drawer Button -->
+          <button onclick="openCartDrawer()" class="relative p-2.5 rounded-2xl bg-white border border-orange-100 hover:border-orange-300 text-slate-700 hover:text-orange-600 transition-all shadow-xs group" title="Keranjang Belanja">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+            <span class="cart-count-badge absolute -top-1.5 -right-1.5 bg-orange-600 text-white text-[10px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center shadow-sm" style="display: none;">
+              0
+            </span>
+          </button>
+
+          <!-- CTA Belanja Sekarang -->
+          <a href="#katalog" class="hidden sm:inline-flex btn-primary-shofi px-5 py-2.5 rounded-2xl text-sm font-bold items-center gap-2">
+            <span>Belanja Sekarang</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 hover:text-orange-600 focus:outline-hidden" aria-label="Buka Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu-drawer" class="hidden md:hidden bg-white/95 backdrop-blur-md border-b border-orange-100 px-4 pt-3 pb-6 transition-all">
+      <div class="flex flex-col space-y-3">
+        <a href="#hero" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-orange-600 py-1.5">Beranda</a>
+        <a href="#kategori" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-orange-600 py-1.5">Kategori Menu</a>
+        <a href="#katalog" class="mobile-nav-link text-base font-semibold text-orange-600 font-bold py-1.5">Katalog Produk</a>
+        <a href="#promo-hemat" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-orange-600 py-1.5">Paket Hemat</a>
+        <a href="#keunggulan" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-orange-600 py-1.5">Tentang Kami</a>
+        <a href="#cara-pesan" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-orange-600 py-1.5">Cara Pemesanan</a>
+        <a href="#faq" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-orange-600 py-1.5">Tanya Jawab (FAQ)</a>
+        <a href="#kontak" class="mobile-nav-link text-base font-semibold text-slate-800 hover:text-orange-600 py-1.5">Kontak Toko</a>
+        
+        <div class="pt-3 border-t border-slate-100">
+          <a href="#katalog" class="mobile-nav-link btn-primary-shofi w-full py-3 rounded-xl text-center text-sm font-bold flex items-center justify-center gap-2">
+            <span>Pilih Frozen Food Favoritmu</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- B. HERO SECTION -->
+    <section id="hero" class="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden hero-gradient-overlay">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Hero Text Content (Left Column) -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Target Audience Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100/80 border border-orange-200 text-orange-800 text-xs font-bold shadow-xs">
+              <span class="w-2 h-2 rounded-full bg-orange-500 animate-ping"></span>
+              <span>Solusi Praktis Ibu Rumah Tangga, Mahasiswa & Anak Kos</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="font-heading font-black text-4xl sm:text-5xl lg:text-6xl text-slate-900 tracking-tight leading-tight">
+              Stok Frozen Food, <br class="hidden sm:inline">
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-500 to-orange-500">
+                Masak Jadi Lebih Mudah!
+              </span>
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Solusi makanan praktis dan lezat untuk keluarga, mahasiswa, dan anak kos. Tinggal simpan di freezer, masak kapan saja!
+            </p>
+
+            <!-- Main CTA & Secondary CTA -->
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <!-- Primary CTA: "Pilih Frozen Food Favoritmu" (Wajib Paling Menonjol) -->
+              <a href="#katalog" class="w-full sm:w-auto btn-primary-shofi px-8 py-4 rounded-2xl text-base sm:text-lg font-extrabold flex items-center justify-center gap-3 badge-glow group">
+                <span>Pilih Frozen Food Favoritmu</span>
+                <svg class="w-5 h-5 transition-transform group-hover:translate-x-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+
+              <!-- Secondary CTA -->
+              <a href="#promo-hemat" class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-white hover:bg-orange-50 text-slate-700 hover:text-orange-600 border border-slate-200 hover:border-orange-300 font-bold text-base flex items-center justify-center gap-2 transition-all shadow-xs">
+                <span>Lihat Paket Hemat</span>
+                <span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full font-bold">Hemat 20%</span>
+              </a>
+            </div>
+
+            <!-- Key Trust Badges -->
+            <div class="pt-4 grid grid-cols-3 gap-3 border-t border-orange-100/70 max-w-xl mx-auto lg:mx-0">
+              <div class="text-center lg:text-left">
+                <div class="text-base sm:text-lg font-heading font-extrabold text-slate-900 flex items-center justify-center lg:justify-start gap-1">
+                  <span>⚡ 5-10</span><span class="text-xs text-slate-500 font-normal">Menit</span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-0.5">Siap Santap Cepat</p>
+              </div>
+              <div class="text-center lg:text-left border-x border-orange-100 px-2">
+                <div class="text-base sm:text-lg font-heading font-extrabold text-slate-900 flex items-center justify-center lg:justify-start gap-1">
+                  <span>❄️ -18°C</span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-0.5">Suhu Beku Terjaga</p>
+              </div>
+              <div class="text-center lg:text-left">
+                <div class="text-base sm:text-lg font-heading font-extrabold text-slate-900 flex items-center justify-center lg:justify-start gap-1">
+                  <span>⭐ 4.9/5</span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-0.5">1.200+ Ulasan Puas</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Graphic Composition (Right Column) -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Background Organic Blob Accent -->
+              <div class="absolute -top-6 -left-6 w-72 h-72 bg-orange-300/30 rounded-full blur-3xl -z-10"></div>
+              <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-emerald-300/30 rounded-full blur-3xl -z-10"></div>
+
+              <!-- Main Hero Card Showcase -->
+              <div class="bg-white rounded-3xl p-3 sm:p-4 shadow-xl border border-orange-100/80 relative">
+                
+                <!-- Main Image: Golden Crispy Nuggets & Fried Goodies -->
+                <div class="rounded-2xl overflow-hidden aspect-4/3 relative bg-orange-50">
+                  <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1000&q=80" 
+                       alt="Nugget Ayam Crispy Shofi Frozen" 
+                       class="w-full h-full object-cover">
+                  
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+                  
+                  <div class="absolute bottom-3 left-3 text-white">
+                    <span class="text-[10px] font-bold bg-orange-500 text-white px-2 py-0.5 rounded-md">
+                      Paling Laris Minggu Ini
+                    </span>
+                    <h3 class="font-heading font-extrabold text-lg mt-1">Nugget Ayam Crispy Golden</h3>
+                    <p class="text-xs text-orange-100">Renyah di luar, daging juicy di dalam</p>
+                  </div>
+                </div>
+
+                <!-- 2 Mini Appetizing Highlights Below -->
+                <div class="grid grid-cols-2 gap-3 mt-3">
+                  <div class="flex items-center gap-2.5 p-2 rounded-xl bg-orange-50/50 border border-orange-100">
+                    <img src="https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=200&q=80" 
+                         alt="Sosis Sapi Jumbo" class="w-11 h-11 rounded-lg object-cover">
+                    <div class="min-w-0">
+                      <p class="text-xs font-bold text-slate-800 truncate">Sosis Sapi Bakar</p>
+                      <p class="text-[10px] text-orange-600 font-extrabold">Rp 45.000</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-2.5 p-2 rounded-xl bg-orange-50/50 border border-orange-100">
+                    <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=200&q=80" 
+                         alt="Dimsum Siomay" class="w-11 h-11 rounded-lg object-cover">
+                    <div class="min-w-0">
+                      <p class="text-xs font-bold text-slate-800 truncate">Dimsum Siomay</p>
+                      <p class="text-[10px] text-orange-600 font-extrabold">Rp 35.000</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Floating Floating Badge 1: Ice Gel Safe Delivery -->
+              <div class="absolute -top-4 -right-4 sm:-top-5 sm:-right-6 glass-badge bg-white/95 rounded-2xl p-3 shadow-lg flex items-center gap-3 animate-pulse-slow">
+                <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl shrink-0">
+                  ❄️
+                </div>
+                <div>
+                  <p class="text-xs font-extrabold text-slate-800">Ice Gel Included</p>
+                  <p class="text-[10px] text-slate-500">Dijamin sampai tetap beku</p>
+                </div>
+              </div>
+
+              <!-- Floating Badge 2: Anak Kos & Keluarga Friendly -->
+              <div class="absolute -bottom-5 -left-4 sm:-bottom-5 sm:-left-6 glass-badge bg-white/95 rounded-2xl p-3 shadow-lg flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-xl shrink-0">
+                  🍳
+                </div>
+                <div>
+                  <p class="text-xs font-extrabold text-slate-800">Tinggal Masak</p>
+                  <p class="text-[10px] text-slate-500">Cocok di teflon & air fryer</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="border-y border-orange-100 bg-white py-6">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="flex items-center justify-center gap-3">
+            <span class="text-2xl">📦</span>
+            <div class="text-left">
+              <p class="text-xs font-bold text-slate-800">Stok Selalu Segar</p>
+              <p class="text-[11px] text-slate-400">Restok berkala setiap minggu</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-3">
+            <span class="text-2xl">🛵</span>
+            <div class="text-left">
+              <p class="text-xs font-bold text-slate-800">Kirim Instan & Sameday</p>
+              <p class="text-[11px] text-slate-400">Bisa Grab, Gojek, Paxel</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-3">
+            <span class="text-2xl">💬</span>
+            <div class="text-left">
+              <p class="text-xs font-bold text-slate-800">Pesan Cepat via WhatsApp</p>
+              <p class="text-[11px] text-slate-400">Respon ramah & solutif</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-3">
+            <span class="text-2xl">🛡️</span>
+            <div class="text-left">
+              <p class="text-xs font-bold text-slate-800">Garansi Kualitas</p>
+              <p class="text-[11px] text-slate-400">Kemasan tersegel higienis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- C. KATEGORI PRODUK -->
+    <section id="kategori" class="py-16 bg-[#FDFBF7]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-orange-600 bg-orange-100 px-3 py-1 rounded-full">
+            Pilihan Variatif
+          </span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+            Kategori Frozen Food
+          </h2>
+          <p class="text-slate-600 text-sm mt-2">
+            Klik kategori favoritmu untuk menyaring katalog produk di bawah ini secara instan.
+          </p>
+        </div>
+
+        <!-- Categories Grid (Populated by JavaScript) -->
+        <div id="categories-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <!-- Populated from products.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- D. PRODUK UNGGULAN & KATALOG -->
+    <section id="katalog" class="py-16 bg-white border-t border-orange-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Katalog -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-600 bg-orange-50 px-3 py-1 rounded-full mb-2">
+              <span>❄️</span>
+              <span>Katalog Lengkap</span>
+            </div>
+            <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900">
+              Pilih Frozen Food Favoritmu
+            </h2>
+            <p class="text-slate-500 text-sm mt-1">
+              Semua produk dijamin segar, beku higienis, dan mudah diolah kapan pun.
+            </p>
+          </div>
+
+          <!-- Total Counter Badge -->
+          <div class="flex items-center gap-3">
+            <span id="products-count" class="text-xs font-bold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-xl">
+              12 Produk
+            </span>
+            <div class="text-[11px] text-slate-400 italic">
+              *Data contoh mudah disesuaikan
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Bar & Controls Bar -->
+        <div class="bg-orange-50/50 rounded-2xl p-4 border border-orange-100 mb-8 flex flex-col md:flex-row gap-4 items-center justify-between">
+          
+          <!-- Search Input -->
+          <div class="relative w-full md:w-96">
+            <input type="text" id="search-input" placeholder="Cari nugget, sosis, dimsum, kentang..." 
+                   class="w-full pl-10 pr-4 py-2.5 bg-white rounded-xl border border-slate-200 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-sm outline-hidden transition-all">
+            <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+
+          <!-- Sort Select -->
+          <div class="flex items-center gap-2 w-full md:w-auto justify-end">
+            <label for="sort-select" class="text-xs font-bold text-slate-600 shrink-0">Urutkan:</label>
+            <select id="sort-select" class="bg-white border border-slate-200 text-xs sm:text-sm font-semibold rounded-xl px-3 py-2 text-slate-700 focus:border-orange-500 outline-hidden">
+              <option value="default">Rekomendasi</option>
+              <option value="popular">Paling Populer & Terlaris</option>
+              <option value="price-low">Harga: Rendah ke Tinggi</option>
+              <option value="price-high">Harga: Tinggi ke Rendah</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar">
+          <button onclick="selectCategoryFilter('all')" data-category="all" class="category-pill bg-orange-600 text-white font-bold px-4 py-2 rounded-full text-xs sm:text-sm shadow-xs transition-all shrink-0">
+            Semua Menu
+          </button>
+          <button onclick="selectCategoryFilter('nugget')" data-category="nugget" class="category-pill bg-white hover:bg-orange-50 text-slate-700 border border-slate-200 font-semibold px-4 py-2 rounded-full text-xs sm:text-sm transition-all shrink-0">
+            🍗 Nugget
+          </button>
+          <button onclick="selectCategoryFilter('sosis')" data-category="sosis" class="category-pill bg-white hover:bg-orange-50 text-slate-700 border border-slate-200 font-semibold px-4 py-2 rounded-full text-xs sm:text-sm transition-all shrink-0">
+            🌭 Sosis
+          </button>
+          <button onclick="selectCategoryFilter('dimsum')" data-category="dimsum" class="category-pill bg-white hover:bg-orange-50 text-slate-700 border border-slate-200 font-semibold px-4 py-2 rounded-full text-xs sm:text-sm transition-all shrink-0">
+            🥟 Dimsum
+          </button>
+          <button onclick="selectCategoryFilter('kentang')" data-category="kentang" class="category-pill bg-white hover:bg-orange-50 text-slate-700 border border-slate-200 font-semibold px-4 py-2 rounded-full text-xs sm:text-sm transition-all shrink-0">
+            🍟 Kentang Goreng
+          </button>
+          <button onclick="selectCategoryFilter('seafood')" data-category="seafood" class="category-pill bg-white hover:bg-orange-50 text-slate-700 border border-slate-200 font-semibold px-4 py-2 rounded-full text-xs sm:text-sm transition-all shrink-0">
+            🍤 Seafood
+          </button>
+          <button onclick="selectCategoryFilter('lainnya')" data-category="lainnya" class="category-pill bg-white hover:bg-orange-50 text-slate-700 border border-slate-200 font-semibold px-4 py-2 rounded-full text-xs sm:text-sm transition-all shrink-0">
+            🍢 Frozen Food Lainnya
+          </button>
+        </div>
+
+        <!-- Products Grid (Populated dynamically) -->
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Populated from products.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- E. KEUNGGULAN SHOFI FROZEN -->
+    <section id="keunggulan" class="py-16 bg-[#FDFBF7]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">
+            Kenapa Memilih Kami?
+          </span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+            Keunggulan Belanja di Shofi Frozen
+          </h2>
+          <p class="text-slate-600 text-sm mt-2">
+            Kami hadir untuk memudahkan aktivitas memasak sehari-hari tanpa mengorbankan kelezatan dan gizi.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="bg-white rounded-3xl p-6 border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center text-2xl mb-4">
+              🍳
+            </div>
+            <h3 class="font-heading font-bold text-slate-800 text-lg mb-2">
+              Praktis untuk Menu Sehari-hari
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Cukup panaskan di teflon, kukus, atau masak di air fryer selama 5-10 menit. Hidangan lezat langsung siap dinikmati tanpa ribet memotong bahan.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-3xl p-6 border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-4">
+              ✨
+            </div>
+            <h3 class="font-heading font-bold text-slate-800 text-lg mb-2">
+              Pilihan Produk yang Beragam
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Tersedia lengkap mulai dari olahan ayam, sosis sapi, dimsum udang lembut, kentang goreng resto, hingga aneka camilan nikmat untuk semua selera.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-3xl p-6 border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl mb-4">
+              🏠
+            </div>
+            <h3 class="font-heading font-bold text-slate-800 text-lg mb-2">
+              Cocok untuk Rumah & Anak Kos
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Tahan hingga berbulan-bulan di suhu beku (-18°C). Penyelamat lapar tengah malam saat tugas menumpuk atau sarapan kilat sebelum beraktivitas.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white rounded-3xl p-6 border border-orange-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl mb-4">
+              📱
+            </div>
+            <h3 class="font-heading font-bold text-slate-800 text-lg mb-2">
+              Pemesanan Mudah Online
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Pilih produk via website, masukkan keranjang, lalu selesaikan pesanan dengan cepat atau lanjutkan langsung ke WhatsApp admin toko.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- F. PROMO ATAU PAKET HEMAT -->
+    <section id="promo-hemat" class="py-16 bg-white border-t border-orange-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-10 text-center md:text-left">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-orange-600 bg-orange-100 px-3 py-1 rounded-full">
+              Lebih Hemat & Komplit
+            </span>
+            <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+              Promo Paket Hemat Shofi Frozen
+            </h2>
+            <p class="text-slate-600 text-sm mt-1">
+              Paket bundling isi lengkap dengan harga lebih terjangkau dibanding beli satuan.
+            </p>
+          </div>
+
+          <div class="text-xs text-slate-500 bg-orange-50 border border-orange-200 rounded-2xl px-4 py-2">
+            🏷️ Kupon Diskon dapat digabungkan dengan paket hemat!
+          </div>
+        </div>
+
+        <!-- Bundles Grid (Populated dynamically) -->
+        <div id="bundles-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Populated from products.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- G. CARA PEMESANAN -->
+    <section id="cara-pesan" class="py-16 bg-[#FDFBF7]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-orange-600 bg-orange-100 px-3 py-1 rounded-full">
+            Alur Belanja Sederhana
+          </span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+            3 Langkah Mudah Memesan
+          </h2>
+          <p class="text-slate-600 text-sm mt-2">
+            Tidak perlu proses rumit. Stok frozen food favoritmu sampai di depan pintu dengan aman.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+          
+          <!-- Step 1 -->
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-orange-100 shadow-sm relative text-center flex flex-col items-center">
+            <div class="w-16 h-16 rounded-2xl bg-orange-500 text-white font-heading font-extrabold text-2xl flex items-center justify-center shadow-md shadow-orange-500/25 mb-5">
+              1
+            </div>
+            <h3 class="font-heading font-bold text-slate-900 text-xl mb-2">
+              Pilih Produk Frozen Food
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Jelajahi katalog atau pilih Paket Hemat favorit Anda. Klik tombol <strong>"Pilih Frozen Food Favoritmu"</strong> untuk mulai melihat menu.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-orange-100 shadow-sm relative text-center flex flex-col items-center">
+            <div class="w-16 h-16 rounded-2xl bg-amber-500 text-white font-heading font-extrabold text-2xl flex items-center justify-center shadow-md shadow-amber-500/25 mb-5">
+              2
+            </div>
+            <h3 class="font-heading font-bold text-slate-900 text-xl mb-2">
+              Masukkan ke Keranjang
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Tentukan jumlah porsi yang dibutuhkan. Periksa rincian belanja di keranjang dan masukkan kode kupon promo untuk potongan harga.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-orange-100 shadow-sm relative text-center flex flex-col items-center">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-600 text-white font-heading font-extrabold text-2xl flex items-center justify-center shadow-md shadow-emerald-500/25 mb-5">
+              3
+            </div>
+            <h3 class="font-heading font-bold text-slate-900 text-xl mb-2">
+              Lanjutkan Pemesanan
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Isi alamat tujuan, pilih metode pengiriman dingin (Instant / Same Day), lalu selesaikan via simulasi pembayaran atau langsung kirim pesanan ke WhatsApp!
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- H. TESTIMONI PELANGGAN -->
+    <section class="py-16 bg-white border-t border-orange-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">
+            Pengalaman Mereka
+          </span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+            Kata Pelanggan Shofi Frozen
+          </h2>
+          <p class="text-slate-600 text-sm mt-2">
+            Contoh ulasan pelanggan yang terbantu dengan kepraktisan stok makanan beku kami.
+          </p>
+          <div class="text-[11px] text-slate-400 italic mt-1">
+            *Placeholder ulasan contoh (dapat diganti dengan testimoni pelanggan asli Anda)
+          </div>
+        </div>
+
+        <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Populated from products.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- I. FAQ SECTION -->
+    <section id="faq" class="py-16 bg-[#FDFBF7]">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-orange-600 bg-orange-100 px-3 py-1 rounded-full">
+            Bantuan & Informasi
+          </span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">
+            Pertanyaan yang Sering Diajukan
+          </h2>
+          <p class="text-slate-600 text-sm mt-2">
+            Temukan jawaban cepat seputar pemesanan, produk, pengiriman, dan pembayaran.
+          </p>
+        </div>
+
+        <!-- FAQ Container Accordion -->
+        <div id="faqs-container" class="space-y-3">
+          <!-- Populated from products.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROMO CTA BANNER BEFORE FOOTER -->
+    <section class="py-14 bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <span class="inline-block bg-white/20 backdrop-blur-xs text-white text-xs font-extrabold px-3 py-1 rounded-full mb-4">
+          ❄️ Stok Makanan Selalu Siap di Kulkas
+        </span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight max-w-3xl mx-auto leading-tight">
+          Lapar Tapi Gak Sempat Masak? <br class="hidden sm:inline">
+          Stok Frozen Food Praktis Sekarang!
+        </h2>
+        <p class="text-orange-100 text-sm sm:text-base max-w-xl mx-auto mt-3 mb-8">
+          Tinggal buka freezer, panaskan 5 menit, dan sajian lezat siap mengisi energimu bersama keluarga dan teman.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#katalog" class="w-full sm:w-auto bg-white text-orange-600 hover:bg-orange-50 px-8 py-4 rounded-2xl font-heading font-black text-base sm:text-lg shadow-lg hover:shadow-xl transition-all">
+            Pilih Frozen Food Favoritmu
+          </a>
+          <button onclick="orderViaWhatsApp()" class="w-full sm:w-auto btn-whatsapp-shofi px-7 py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.35.49 1.199.533 1.286.044.087.073.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.101-.177.21-.077.382.1.173.444.733.953 1.186.655.584 1.208.765 1.381.852.173.087.275.072.376-.044.101-.116.433-.506.549-.679.116-.173.231-.144.39-.087s1.011.477 1.184.564c.173.087.289.13.332.202.043.072.043.419-.101.824z"></path>
+            </svg>
+            <span>Tanya via WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- J. FOOTER -->
+  <footer id="kontak" class="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        
+        <!-- Info Bisnis & Tagline -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-orange-500 text-white flex items-center justify-center font-bold text-xl">
+              ❄️
+            </div>
+            <span class="font-heading font-extrabold text-2xl text-white tracking-tight">
+              Shofi<span class="text-orange-500">Frozen</span>
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed">
+            Toko penyedia aneka frozen food lezat, praktis, dan berkualitas untuk keluarga, mahasiswa, dan anak kos. Siap kirim dingin dan cepat sampai ke rumah Anda.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://wa.me/6281234567890" target="_blank" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-emerald-600 text-white flex items-center justify-center text-sm transition-colors" title="WhatsApp">
+              💬
+            </a>
+            <a href="#" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-pink-600 text-white flex items-center justify-center text-sm transition-colors" title="Instagram">
+              📸
+            </a>
+            <a href="#" class="w-9 h-9 rounded-xl bg-slate-800 hover:bg-blue-600 text-white flex items-center justify-center text-sm transition-colors" title="Facebook">
+              📘
+            </a>
+          </div>
+        </div>
+
+        <!-- Tautan Navigasi Cepat -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">
+            Menu Navigasi
+          </h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#hero" class="hover:text-orange-400 transition-colors">Beranda</a></li>
+            <li><a href="#kategori" class="hover:text-orange-400 transition-colors">Kategori Menu</a></li>
+            <li><a href="#katalog" class="hover:text-orange-400 transition-colors">Katalog Produk</a></li>
+            <li><a href="#promo-hemat" class="hover:text-orange-400 transition-colors">Paket Hemat</a></li>
+            <li><a href="#cara-pesan" class="hover:text-orange-400 transition-colors">Cara Pemesanan</a></li>
+            <li><a href="#faq" class="hover:text-orange-400 transition-colors">FAQ / Bantuan</a></li>
+          </ul>
+        </div>
+
+        <!-- Kategori Populer -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">
+            Kategori Favorit
+          </h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#katalog" onclick="selectCategoryFilter('nugget')" class="hover:text-orange-400 transition-colors">Nugget Crispy</a></li>
+            <li><a href="#katalog" onclick="selectCategoryFilter('sosis')" class="hover:text-orange-400 transition-colors">Sosis Sapi Jumbo</a></li>
+            <li><a href="#katalog" onclick="selectCategoryFilter('dimsum')" class="hover:text-orange-400 transition-colors">Dimsum Ayam Udang</a></li>
+            <li><a href="#katalog" onclick="selectCategoryFilter('kentang')" class="hover:text-orange-400 transition-colors">Kentang Shoestring</a></li>
+            <li><a href="#katalog" onclick="selectCategoryFilter('seafood')" class="hover:text-orange-400 transition-colors">Ebi Furai & Seafood</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak & Jam Operasional -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">
+            Kontak Toko
+          </h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li class="flex items-start gap-2">
+              <span class="text-orange-400">📍</span>
+              <span>Jl. Merdeka No. 88, Jakarta Selatan (Contoh Alamat)</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-orange-400">⏰</span>
+              <span>Buka: Setiap Hari (08.00 - 20.00 WIB)</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-orange-400">📱</span>
+              <span>WhatsApp: +62 812-3456-7890</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-orange-400">✉️</span>
+              <span>order@shofifrozen.com</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Hak Cipta & Disclaimer -->
+      <div class="pt-8 border-t border-slate-800 text-center sm:flex sm:justify-between sm:items-center text-xs text-slate-500">
+        <p>© 2026 Shofi Frozen. Hak Cipta Dilindungi. Semua harga & produk dapat disesuaikan.</p>
+        <p class="mt-2 sm:mt-0">Dibuat dengan cinta untuk hidangan lezat & praktis di rumah.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL & DRAWER INTERAKTIF -->
+  <!-- ========================================================================= -->
+
+  <!-- 1. CART SLIDE-OVER DRAWER -->
+  <div id="cart-drawer" class="cart-drawer-overlay fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-xs flex justify-end">
+    <!-- Click outside to close -->
+    <div class="absolute inset-0" onclick="closeCartDrawer()"></div>
+    
+    <!-- Drawer Container -->
+    <div class="cart-drawer-content relative w-full max-w-md bg-white h-full shadow-2xl flex flex-col z-10">
+      
+      <!-- Drawer Header -->
+      <div class="p-5 border-b border-orange-100 flex items-center justify-between bg-orange-50/50">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-xl bg-orange-500 text-white flex items-center justify-center font-bold text-sm">
+            🛒
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-slate-800 text-lg">Keranjang Belanja</h3>
+            <p class="text-[11px] text-slate-500">Pesanan frozen food Anda</p>
+          </div>
+        </div>
+        <button onclick="closeCartDrawer()" class="w-8 h-8 rounded-full bg-white text-slate-500 hover:text-slate-800 flex items-center justify-center shadow-xs">
+          ✕
+        </button>
+      </div>
+
+      <!-- Empty State View -->
+      <div id="cart-empty-view" class="flex-1 flex flex-col items-center justify-center p-8 text-center">
+        <div class="w-24 h-24 rounded-full bg-orange-50 text-orange-400 flex items-center justify-center text-4xl mb-4">
+          🛒
+        </div>
+        <h4 class="font-heading font-bold text-slate-800 text-lg mb-1">Keranjang Masih Kosong</h4>
+        <p class="text-xs text-slate-500 max-w-xs mb-6">
+          Belum ada produk yang dipilih. Yuk pilih frozen food favorit untuk stok di kulkas!
+        </p>
+        <button onclick="closeCartDrawer(); window.location.href='#katalog';" class="btn-primary-shofi px-6 py-2.5 rounded-xl text-xs font-bold">
+          Pilih Frozen Food Favoritmu
+        </button>
+      </div>
+
+      <!-- Active Cart View -->
+      <div id="cart-active-view" class="flex-1 overflow-y-auto flex flex-col justify-between hidden">
+        
+        <!-- Cart Items List -->
+        <div id="cart-items-list" class="p-4 space-y-3">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- Cart Summary & Checkout Actions -->
+        <div class="p-5 bg-[#FDFBF7] border-t border-orange-100 space-y-4">
+          
+          <!-- Promo Voucher Input -->
+          <div class="bg-white p-3 rounded-2xl border border-orange-100">
+            <label class="text-[11px] font-bold text-slate-700 block mb-1">Punya Kode Kupon Promo?</label>
+            <div class="flex gap-2">
+              <input type="text" id="coupon-input" placeholder="Contoh: SHOFIHEMAT" class="flex-1 px-3 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-xl uppercase font-mono outline-hidden focus:border-orange-500">
+              <button onclick="applyCoupon()" class="px-4 py-1.5 bg-orange-600 text-white rounded-xl text-xs font-bold hover:bg-orange-700 transition-colors">
+                Gunakan
+              </button>
+            </div>
+            <span id="coupon-message" class="text-xs mt-1 block"></span>
+          </div>
+
+          <!-- Price Calculations -->
+          <div class="space-y-1.5 text-xs text-slate-600">
+            <div class="flex justify-between">
+              <span>Subtotal Produk:</span>
+              <span id="cart-subtotal" class="font-bold text-slate-800">Rp 0</span>
+            </div>
+            <div id="cart-discount-row" class="flex justify-between text-emerald-600 font-semibold hidden">
+              <span>Diskon Kupon:</span>
+              <span id="cart-discount">-Rp 0</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="flex items-center gap-1">
+                <span>Kemasan Ice Gel Beku:</span>
+                <span class="text-[10px] text-slate-400" title="Beli di atas 100k gratis ice gel">ⓘ</span>
+              </span>
+              <span id="cart-icegel-fee" class="font-bold text-slate-800">Rp 3.000</span>
+            </div>
+            <div class="border-t border-slate-200 pt-2 flex justify-between items-center text-sm font-extrabold text-slate-900">
+              <span>Total Belanja:</span>
+              <span id="cart-grandtotal" class="text-lg text-orange-600 font-heading">Rp 0</span>
+            </div>
+          </div>
+
+          <!-- Checkout Buttons -->
+          <div class="space-y-2 pt-2">
+            <button onclick="openCheckoutModal()" class="w-full btn-primary-shofi py-3 px-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
+              <span>Lanjut ke Form Checkout</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </button>
+            
+            <button onclick="orderViaWhatsApp()" class="w-full btn-whatsapp-shofi py-2.5 px-4 rounded-xl font-bold text-xs flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.35.49 1.199.533 1.286.044.087.073.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.101-.177.21-.077.382.1.173.444.733.953 1.186.655.584 1.208.765 1.381.852.173.087.275.072.376-.044.101-.116.433-.506.549-.679.116-.173.231-.144.39-.087s1.011.477 1.184.564c.173.087.289.13.332.202.043.072.043.419-.101.824z"></path>
+              </svg>
+              <span>Langsung Kirim Pesanan ke WhatsApp</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 2. QUICK VIEW MODAL (DETAIL PRODUK & CARA MASAK) -->
+  <div id="quickview-modal" class="modal-overlay fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="absolute inset-0" onclick="closeQuickView()"></div>
+    <div class="modal-container relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl overflow-hidden z-10">
+      <button onclick="closeQuickView()" class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center font-bold">
+        ✕
+      </button>
+      <div id="quickview-content">
+        <!-- Content injected dynamically by openQuickView() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. CHECKOUT MODAL (DATA PENERIMA & METODE PENGIRIMAN) -->
+  <div id="checkout-modal" class="modal-overlay fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="absolute inset-0" onclick="closeCheckoutModal()"></div>
+    <div class="modal-container relative w-full max-w-xl bg-white rounded-3xl shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col">
+      
+      <!-- Modal Header -->
+      <div class="p-5 border-b border-orange-100 bg-orange-50/50 flex items-center justify-between">
+        <div>
+          <h3 class="font-heading font-extrabold text-xl text-slate-900">Alur Checkout Pemesanan</h3>
+          <p class="text-xs text-slate-500">Lengkapi data pengiriman frozen food Anda</p>
+        </div>
+        <button onclick="closeCheckoutModal()" class="w-8 h-8 rounded-full bg-white text-slate-600 flex items-center justify-center shadow-xs">
+          ✕
+        </button>
+      </div>
+
+      <!-- Form Inputs Container (Scrollable) -->
+      <form onsubmit="submitSimulatedOrder(event)" class="p-6 overflow-y-auto space-y-4">
+        
+        <!-- Ringkasan Produk Singkat -->
+        <div class="bg-orange-50/40 p-3.5 rounded-2xl border border-orange-100">
+          <span class="text-xs font-bold text-slate-700 block mb-2">Ringkasan Item Belanja:</span>
+          <div id="checkout-summary-list">
+            <!-- Dynamic Content -->
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Nama Lengkap -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Nama Penerima <span class="text-red-500">*</span></label>
+            <input type="text" id="checkout-name" required placeholder="Contoh: Siti Rahma" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:border-orange-500 outline-hidden">
+          </div>
+          <!-- Nomor WhatsApp -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Nomor WhatsApp Aktif <span class="text-red-500">*</span></label>
+            <input type="tel" id="checkout-phone" required placeholder="Contoh: 081234567890" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:border-orange-500 outline-hidden">
+          </div>
+        </div>
+
+        <!-- Alamat Lengkap -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Alamat Lengkap Pengiriman <span class="text-red-500">*</span></label>
+          <textarea id="checkout-address" required rows="2" placeholder="Nama Jalan, No. Rumah, RT/RW, Kelurahan, Kecamatan, Kota (atau nama kosan / patokan)" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs focus:border-orange-500 outline-hidden"></textarea>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Pilihan Kurir Dingin -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Pilihan Pengiriman</label>
+            <select id="checkout-courier" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:border-orange-500 outline-hidden bg-white">
+              <option value="Instant (1-2 Jam) Paxel/Grab">🛵 Instant (1-2 Jam) — Beku Aman</option>
+              <option value="Same Day (Paxel Cold Ice Gel)">📦 Same Day (Pendingin + Ice Gel)</option>
+              <option value="Ambil Sendiri di Toko">🏬 Ambil di Toko Shofi Frozen</option>
+            </select>
+          </div>
+
+          <!-- Pilihan Pembayaran -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Metode Pembayaran</label>
+            <select id="checkout-payment" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs focus:border-orange-500 outline-hidden bg-white">
+              <option value="QRIS (BCA, Mandiri, GoPay, OVO)">📲 QRIS Semua Bank & E-Wallet</option>
+              <option value="Transfer Bank BCA / Mandiri">🏦 Transfer Bank Manual</option>
+              <option value="COD (Bayar di Tempat)">💵 COD (Bayar Saat Barang Sampai)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Catatan Pesanan -->
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Catatan Tambahan (Opsional)</label>
+          <input type="text" id="checkout-notes" placeholder="Contoh: Titip ke satpam kosan jika saya sedang kuliah" class="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs focus:border-orange-500 outline-hidden">
+        </div>
+
+        <!-- Tombol Aksi Checkout -->
+        <div class="pt-3 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
+          <button type="button" onclick="orderViaWhatsApp()" class="flex-1 btn-whatsapp-shofi py-3 px-4 rounded-xl text-xs font-bold flex items-center justify-center gap-2">
+            <span>Kirim Pesanan via WhatsApp</span>
+          </button>
+          <button type="submit" class="flex-1 btn-primary-shofi py-3 px-4 rounded-xl text-xs font-bold flex items-center justify-center gap-2">
+            <span>Selesaikan Pesanan (Simulasi)</span>
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- 4. ORDER SUCCESS CONFIRMATION MODAL -->
+  <div id="order-success-modal" class="modal-overlay fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="absolute inset-0" onclick="closeOrderSuccessModal()"></div>
+    <div class="modal-container relative w-full max-w-md bg-white rounded-3xl shadow-2xl p-6 z-10 max-h-[90vh] overflow-y-auto">
+      <div id="order-success-content">
+        <!-- Content injected dynamically by openOrderSuccessModal() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container"></div>
+
+  <!-- 6. MOBILE STICKY BOTTOM ACTION BAR -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-orange-100 p-3 flex items-center justify-between mobile-bottom-bar">
+    <div class="flex items-center gap-2.5" onclick="openCartDrawer()">
+      <div class="relative w-10 h-10 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-lg">
+        🛒
+        <span class="cart-count-badge absolute -top-1 -right-1 bg-orange-600 text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center" style="display: none;">0</span>
+      </div>
+      <div>
+        <span id="mobile-cart-count" class="text-[10px] text-slate-400 font-semibold block">0 Item</span>
+        <span id="mobile-cart-total" class="text-xs font-extrabold text-orange-600">Rp 0</span>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <a href="#katalog" class="btn-primary-shofi px-4 py-2 rounded-xl text-xs font-bold">
+        Pilih Menu
+      </a>
+      <button onclick="openCartDrawer()" class="bg-orange-50 text-orange-700 hover:bg-orange-100 font-bold px-3 py-2 rounded-xl text-xs">
+        Buka Keranjang
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "shofi-frozen-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page e-commerce modern, menarik, dan responsif untuk bisnis frozen food Shofi Frozen.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "frozen-food",
+    "landing-page",
+    "ecommerce",
+    "shofi-frozen",
+    "tailwind"
+  ],
+  "author": "Shofi Frozen",
+  "license": "MIT"
+}
